@@ -4,6 +4,7 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 
 //MongDB
+mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/locksmith');
 
 //Express
